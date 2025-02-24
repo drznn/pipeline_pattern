@@ -1,3 +1,5 @@
+# Exemplo 2 - Pipeline de Processamento de dados
+
 from src.pipeline import Pipeline
 from src.stages.stage_base import StageBase
 from src.stages.notification_stage import NotificationStage

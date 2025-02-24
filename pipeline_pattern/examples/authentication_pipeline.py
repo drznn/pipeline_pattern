@@ -1,3 +1,5 @@
+# Exemplo 2 - Pipeline de Autenticação
+
 from src.pipeline import Pipeline
 from src.stages.auth_stage import AuthStage
 from src.stages.processing_stage import ProcessingStage
