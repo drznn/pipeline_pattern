@@ -1,3 +1,7 @@
+## SE ESTIVER COM ERROS DE EXECUÇÃO NO TESTE DE NÃO ECONTRAR O MODULO /SRC. RODAR O COMANDO ABAIXO NO TERMINAL
+## $env:PYTHONPATH = ".;src"
+
+
 import pytest
 import time
 from src.stages.auth_stage import AuthStage
