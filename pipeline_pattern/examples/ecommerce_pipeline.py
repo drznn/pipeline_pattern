@@ -1,4 +1,4 @@
-# Exemplo 2 - Pipeline de Checkout em E-commerce
+# Exemplo 3 - Pipeline de Checkout em E-commerce
 
 from pipeline_pattern.src.stages.stage_base import StageBase
 from pipeline_pattern.src.pipeline import Pipeline

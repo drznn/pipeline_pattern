@@ -4,7 +4,7 @@ from src.stages.processing_stage import ProcessingStage
 from src.stages.notification_stage import NotificationStage
 
 def authentication_pipeline():
-    print("🔐 Executando Pipeline de Autenticação...")
+    print("Executando Pipeline de Autenticação...")
     pipeline = Pipeline()
     pipeline.add_stage(AuthStage())
     pipeline.add_stage(ProcessingStage())
@@ -14,7 +14,7 @@ def authentication_pipeline():
     result = pipeline.execute(input_data)
     
     # Adicionando print para visualizar os resultados
-    print("✅ Resultado Final do Pipeline de Autenticação:", result)
+    print("Resultado Final do Pipeline de Autenticação:", result)
     return result
 
 
