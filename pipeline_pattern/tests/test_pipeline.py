@@ -5,6 +5,18 @@ from pipeline_pattern.src.stages.notification_stage import NotificationStage
 from pipeline_pattern.examples.authentication_pipeline import authentication_pipeline
 from pipeline_pattern.examples.ecommerce_pipeline import ecommerce_pipeline
 from pipeline_pattern.examples.data_processing_pipeline import data_processing_pipeline
+import time
+
+def test_pipeline_performance():
+    """Testa o tempo de execução do pipeline."""
+    start = time.time()
+    result = authentication_pipeline()
+    end = time.time()
+
+    assert result["auth"] is True
+    assert result["processed"] is True
+    assert result["notification"] == "Notificação enviada com sucesso!"
+    print(f"Teste de desempenho passou! Tempo: {end - start:.4f} segundos.")
 
 def test_auth_stage():
     auth = AuthStage()
